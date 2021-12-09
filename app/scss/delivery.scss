@@ -1,0 +1,39 @@
+@import "about";
+.PayDeliver__container{
+    justify-content: center;
+}
+.pay{
+    width: 100%;
+    height: 100%;
+    background: $ns05;
+    &__card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        &-inner:not(:first-child){
+            padding-top: 16px;
+        }
+    }
+    &__container{
+        justify-content: space-between;
+    }
+}
+.text-container{
+    max-width: 680px;
+    &__subtitle{
+        margin: 32px 0 16px 0;
+    }
+}
+.bg-mw{
+    background: $mw;
+}
+@media screen and (max-width: 570px){
+    .pay__container{
+        flex-direction: column;
+        padding: 20% 0;
+    }
+    .pay__card{
+        margin-top: 32px;
+    }
+}
