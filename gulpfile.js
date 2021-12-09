@@ -34,7 +34,7 @@ gulp.task('css', function(){
 });
 
 gulp.task('html', function(){
-  return gulp.src('app/*.html')
+  return gulp.src('/*.html')
   .pipe(browserSync.reload({stream: true}))
 });
 
