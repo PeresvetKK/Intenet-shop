@@ -1,0 +1,23 @@
+@import "about";
+.life__contact{
+    background: $mw;
+}
+.components__box{
+    svg{
+        width: 48px;
+        height: 48px;
+    }
+}
+.components__text-box{
+    margin: 0 auto;
+}
+.components__list{
+    justify-content: center;
+}
+.life{
+    background: $mw;
+}
+
+
+
+@import "mediaContact";

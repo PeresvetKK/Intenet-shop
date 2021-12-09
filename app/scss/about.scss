@@ -1,0 +1,26 @@
+@import "style";
+.container-center{
+    justify-content: center;
+}
+.btn-center{
+    margin: 0 auto;
+}
+.virtual__btn{
+    margin-top: 48px;
+}
+
+.whyme{
+    &__components{
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+.life{
+    &__box{
+        svg{
+            width: 48px;
+            height: 48px;
+        }
+    }
+}
+@import "mediaAbout";

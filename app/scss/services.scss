@@ -1,0 +1,32 @@
+@import "about";
+.virtual-diz{
+    background: $ns03;
+    .btn{
+        margin-top: 48px;
+    }
+}
+.inner__text-box{
+    display: flex;
+    justify-content: space-between;
+    .text-box__main{
+        width: 48%;
+    }
+}
+.painting{
+    .btn{
+        margin-top: 48px;
+    }
+}
+.gray-bg{
+    background: $ns03;
+}
+.complite__container{
+    padding: 10% 0;
+}
+.questions__container{
+    justify-content: center;
+    .btn-big{
+        margin: 0 auto;
+    }
+}
+@import "mediaServices";
