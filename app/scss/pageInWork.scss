@@ -1,0 +1,15 @@
+@import "delivery";
+
+.pageInWork{
+
+    &__container{
+        justify-content: center;
+        padding-top: 5%;
+    }
+}
+.form{
+    align-items: center;
+    &__box{
+        align-items: flex-start;
+    }
+}
