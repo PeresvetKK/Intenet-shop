@@ -265,6 +265,27 @@ li{
     &__questons{
         margin-top: 48px;
     }
+    &__textarea{
+        width: 100%;
+        min-height: 128px;
+        outline: none;
+        border: none;
+        background: $ns05;
+        padding: 16px;
+        font-family: "roboto-regular";
+        color: $ns;
+        resize: none;
+        &:hover{
+            background: $ns10;
+        }
+        &:focus{
+            border: 1px solid $ns;
+            background: $mw;
+        }
+        &::placeholder{
+            color: $ns35;
+        }
+    }
 }
 input{
     font-family: 'roboto-regular';

@@ -11,10 +11,25 @@
 }
 .text-box__main{
     text-align: center;
-    padding: 0;
+    padding: 20px 0 0 0;
+}
+.form{
+    align-items: center;
+    &__box{
+        align-items: flex-start;
+    }
 }
 @media screen and (max-width: 768px) {
     .main__container{
         width: 81%;
+    }
+    .components__list{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 475px) {
+    .main__container{
+        width: 95%;
     }
 }
