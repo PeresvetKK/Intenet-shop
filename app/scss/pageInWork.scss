@@ -1,7 +1,7 @@
-@import "delivery";
+@import "style";
+
 
 .pageInWork{
-
     &__container{
         justify-content: center;
         padding-top: 5%;
@@ -14,7 +14,9 @@
     }
 }
 .catalogWorking{
-
+    &__container{
+        flex-direction: column;
+    }
     &__title{
         width: 100%;
         display: flex;
@@ -32,4 +34,9 @@
 }
 .text-container{
     max-width: 540px;
+}
+@media screen and (max-width: 1110px) {
+    .catalogWorking__title{
+        flex-direction: column;
+    }
 }
