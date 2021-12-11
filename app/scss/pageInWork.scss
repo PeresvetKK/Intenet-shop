@@ -13,3 +13,23 @@
         align-items: flex-start;
     }
 }
+.catalogWorking{
+
+    &__title{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-go{
+            display: flex;
+            align-items: center;
+            a{
+                color: $ns;
+                margin-right: 12px;
+            }
+        }
+    }
+}
+.text-container{
+    max-width: 540px;
+}
