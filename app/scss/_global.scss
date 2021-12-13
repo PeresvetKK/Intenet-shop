@@ -183,6 +183,7 @@ li{
     transition: all .3s;
     text-transform: uppercase;
     cursor: pointer;
+    text-align: center;
     &:hover{
         color: $ns;
         background: $bw;
@@ -227,12 +228,45 @@ li{
         width: 300px;
     }
 }
+.btn-catalog{
+    width: 188px;
+}
 #catalog{
     border: none;
     outline: none;
     background: transparent;
     color: $mw;
     cursor: pointer;
+}
+.mini-catalog{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 32px;
+    &__item{
+        width: 220px;
+       background: $mw;
+    }
+    &__inner-item{
+        width: 188px;
+        margin: 0 auto;
+        padding: 24px 0;
+    }
+    &__img{
+        width: 100%;
+        height: 160px;
+        background-image: url(../images/leica.png);
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+    &__price{
+        margin: 16px 0 24px 0;
+        font-size: 24px;
+        line-height: 133%;
+    }
 }
 .text-box{
     &__main{

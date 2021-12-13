@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css">
-    <title>Главная</title>
+    <link rel="stylesheet" href="css/delivery.min.css">
+    <title>О нас</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header header-bw">
         <div class="container header__container">
             <div class="header__content">
                 <div class="header__burger burger">
@@ -51,10 +51,10 @@
                            </select>
                         </li>
                         <li class="menu__list">
-                            <a href="" class="menu__link">оплата и доставка</a>
+                            <a href="delivery.html" class="menu__link">оплата и доставка</a>
                         </li>
                         <li class="menu__list">
-                            <a href="" class="menu__link">партнерские программы</a>
+                            <a href="partner.html" class="menu__link">партнерские программы</a>
                         </li>
                         <li class="menu__list">
                             <a href="about.html" class="menu__link">о нас</a>
@@ -67,7 +67,7 @@
                         </li>
                     </ul>
                 </nav>
-                <button class="btn-onBlack header__btn">создать дизайн</button>
+                <a href="pageInWork.html"><button class="btn header__btn">создать дизайн</button></a>
             </div>
             <div class="bottom-menu">
                 <div class="menu__container">
@@ -77,10 +77,10 @@
                                 <a href="" class="menu__link">каталог</a>
                             </li>
                             <li class="menu__list">
-                                <a href="" class="menu__link">оплата и доставка</a>
+                                <a href="delivery.html" class="menu__link">оплата и доставка</a>
                             </li>
                             <li class="menu__list">
-                                <a href="" class="menu__link">партнерские программы</a>
+                                <a href="partner.html" class="menu__link">партнерские программы</a>
                             </li>
                             <li class="menu__list">
                                 <a href="about.html" class="menu__link">о нас</a>
@@ -111,102 +111,49 @@
             </div>
         </div>
     </header>
-
-    <section class="main">
-        <div class="container main__container">
-            <h1 class=" main__title">СОЗДАЙТЕ ВАННУЮ КОМНАТУ СВОЕЙ МЕЧТЫ </h1>
-            <button class="btn-onBlack btn-onBlack-big">создать дизайн</button>
-        </div>
-    </section>
-
-    <section class="aboutUs">
-        <div class="container about__container">
-            <div class="about__text text-box">
-                <h2 class="text-box__title">о нас</h2>
-                <p class="text-box__main">Dizain Santehnika — это онлайн-салон концептуальных интерьеров для ванных комнат. Мы собираем только самые культовые новинки, следим за модными трендами и создаем мебель на заказ. Мы сфокусированы на эклектическом стиле, универсальности и натуральных материалах.</p>
-                <p class="text-box__main">Dizain Santehnika — настоящая семейная компания. Каждый из нас развивается в своем предназначении и стремится к максимальноой реализации собсвтенного потенциала. Поэтому, общие цели и планы достигаются с большой скорость и любовью к делу с ориентацией на качество работы и благоприятную внутреннюю культуру на протяжении уже 10 лет.</p>
-            </div>
-            <div class="about__img">
-                <img src="images/img.jpg" alt="">
+    <section class="PeyDeliver header-top">
+        <div class="container PayDeliver__container">
+            <div class="text-box components__text-box">
+                <h2 class="text-box__title">оплата и доставка</h2>
+                <p class="text-box__main">Ознакомьтесь с возможностями оплаты и доставки и подберите самый удобный для вас способ.</p>
             </div>
         </div>
     </section>
-
-    <section class="howtake">
-        <div class="container howtake__container">
-            <div class="howtake__inner">
-                <div class="howtake__text text-box">
-                    <h2 class="text-box__title">Как подобрать?</h2>
-                    <p class="text-box__main">Не знаете какой смеситель подойдет к плитке которая вам понравилась? Сложно подобрать элементы дизайна? Не беда, наш виртуальный дизайнер поможет вам!</p>
-                </div>
-                <button class="btn-onBlack btn-onBlack-big">перейти к дизайнеру</button>
+    <section class="pay">
+        <div class="container pay__container">       
+            <div class="pay__text-container text-container">
+                <h2 class="text-container__title">оплата</h2>
+                <h4 class="text-container__subtitle">онлайн</h4>
+                <p class="text-container__text">Оплата производится через процессинговый центр онлайн-платежей ASSIST, что гарантирует вам  полную безопастность платежей. Все приватные сведения о вашем платежном средстве вводятся в момент платежа на сайте системы ASSIST по защищенному протоколу.</p>
+                <h4 class="text-container__subtitle">курьеру</h4>
+                <p class="text-container__text">Оплата производится непосредственно курьеру при получении заказа.</p>
+            </div>
+            <div class="pay__card">
+                <img class="pay__card-inner" src="images/logo_MC.png" alt="">
+                <img class="pay__card-inner" src="images/logo_mir.png" alt="">
+                <img class="pay__card-inner" src="images/logo_visa.png" alt="">
             </div>
         </div>
     </section>
-
-    <section class="compliteWork">
-        <div class="container complite__container">
-            <div class="text-box">
-                <h2 class="text-box__title">готовые решения</h2>
-                <p class="text-box__main">Решения дизайна, которые мы готовы предложить тем, кто не хочет тратить время на поиск необходимых материалов на сайте.</p>
+    <section class="pay bg-mw">
+        <div class="container pay__container">       
+            <div class="pay__text-container text-container">
+                <h2 class="text-container__title">доставка</h2>
+                <h4 class="text-container__subtitle">собственной курьерской службой</h4>
+                <p class="text-container__text">Наши машины ежедневно курсируют по Москве и Московской области. Заказы доставляются день в день или на следующий день в зависимости от загрузки курьерской службы.</p>
+                <h4 class="text-container__subtitle">транспортной компанией</h4>
+                <p class="text-container__text">Мы работаем только с проверенными партнерами, чтобы Вы получили заказ быстро и качественно. Заказанный Вами товар отправляется в транспортную компанию уже в день оформления заказа.</p>
             </div>
-
-            <div class="slider-dots"> <!--тело слайдера маленького (нижнего)-->
-                <div class="slider-dots__item"> <!--первый экран-->
-                    <div class="dots-box"> <!--контент экрана-->
-                        <button class="dots-box__name">электрика</button>
-                    </div>
-                </div>
-                <div class="slider-dots__item"><!--второй экран-->
-                    <div class="dots-box"> <!--контент экрана-->
-                        <button class="dots-box__name">баухауз</button>
-                    </div>
-                </div>
-                <div class="slider-dots__item"><!--третий экран-->
-                    <div class="dots-box"> <!--контент экрана-->
-                        <button class="dots-box__name">гранж</button>
-                    </div>
-                </div>
+            <div class="pay__card">
+                <img class="pay__card-inner" src="images/logo_DHL.png" alt="">
+                <img class="pay__card-inner" src="images/logo_DL.png" alt="">
+                <img class="pay__card-inner" src="images/logo_CDEK.png" alt="">
+                <img class="pay__card-inner" src="images/logo_PEK.png" alt="">
             </div>
-
-            <div class="header__slider"> 
-                <div class="header__slider-item slider-item"> 
-                    <div class="slider-item__info"> 
-                        <div class="slider-item__info-title">
-                            Эклектика — стиль, выросший из философского течения, которое уходит корнями во второй век нашей эры. Допустимо сочетание двух-трех стилей в рамках одного цветового решения и близости текстур.
-                        </div>
-                        <div class="slider-item__info-img">
-                            <img src="images/rectangle.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="header__slider-item slider-item">
-                    <div class="slider-item__info">
-                        <div class="slider-item__info-title">
-                            Баухауз — это направление модернистской архитектуры, которое уходит в Германии в стенах Высшей школы строительства и художественного конструирования в рамках одного цветового решения.
-                        </div>
-                        <div class="slider-item__info-img">
-                            <img src="images/bauhouse.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="header__slider-item slider-item">
-                    <div class="slider-item__info">
-                        <div class="slider-item__info-title">
-                            Гранж — Стиль гранж по сей день является одним из наиболее востребованных как архитектурных, так и культурных направлений. Данное течение приветствует, прежде всего, практичность.
-                        </div>
-                        <div class="slider-item__info-img">
-                            <img src="images/granz.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <button class="btn btn-big">заказать решение</button>
         </div>
     </section>
-
     <section class="questions">
-        <div class="container questions__container">
+        <div class="container questions__container container-center">
             <div class="text-box">
                 <h2 class="text-box__title">остались вопросы?</h2>
                 <p class="text-box__main">Оставьте нам свои контактные данные и менеджер<br>ответит на любые ваши вопросы!</p>
@@ -225,59 +172,55 @@
                         <label for="lemail">Адрес эл. почты</label>
                         <input type="email" id="lemail" name="lemail" placeholder="example@yandex.ru" required>
                     </div>
-                    <button class="btn btn-big">отправить</button>
+                    <button class="btn btn-big btn-center">отправить</button>
                 </form>
-            </div>
-            <div class="about__img">
-                <img src="images/formPic.png" alt="">
             </div>
         </div>
     </section>
-
     <footer class="footer">
-        <div class="container footer__container">
+        <div class="footer__container container">
             <div class="footer__header">
                 <a href="../index.html" class="header__content-title">Dizain Santehnika</a>
             </div>
             <div class="footer__inner">
                 <div class="inner-block">
-                    <a class="inner-block__title" href="">каталог</a>
-                    <a class="inner-block__text" href="">Аксессуары</a>
-                    <a class="inner-block__text" href="">Готовые решения</a>
-                    <a class="inner-block__text" href="">Декор</a>
-                    <a class="inner-block__text" href="">Комплекты</a>
-                    <a class="inner-block__text" href="">Мебель</a>
+                    <a class="inner-block__title" href="pageInWork.html">каталог</a>
+                    <a class="inner-block__text" href="pageInWork.html">Аксессуары</a>
+                    <a class="inner-block__text" href="pageInWork.html">Готовые решения</a>
+                    <a class="inner-block__text" href="pageInWork.html">Декор</a>
+                    <a class="inner-block__text" href="pageInWork.html">Комплекты</a>
+                    <a class="inner-block__text" href="pageInWork.html">Мебель</a>
                 </div>
                 <div class="inner-block">
-                    <a class="inner-block__title" href="">каталог</a>
-                    <a class="inner-block__text" href="">Cушители</a>
-                    <a class="inner-block__text" href="">Сантехника</a>
-                    <a class="inner-block__text" href="">Смесители</a>
-                    <a class="inner-block__text" href="">Свет</a>
+                    <a class="inner-block__title" href="pageInWork.html">каталог</a>
+                    <a class="inner-block__text" href="pageInWork.html">Cушители</a>
+                    <a class="inner-block__text" href="pageInWork.html">Сантехника</a>
+                    <a class="inner-block__text" href="pageInWork.html">Смесители</a>
+                    <a class="inner-block__text" href="pageInWork.html">Свет</a>
                 </div>
                 <div class="inner-block">
                     <a class="inner-block__title" href="services.html">услуги</a>
-                    <a class="inner-block__text" href="">Виртуальный дизайнер</a>
-                    <a class="inner-block__text" href="">Покраска изделий</a>
+                    <a class="inner-block__text" href="pageInWork.html">Виртуальный дизайнер</a>
+                    <a class="inner-block__text" href="pageInWork.html">Покраска изделий</a>
                 </div>
                 <div class="inner-block">
-                    <a class="inner-block__title" href="">партнерские программы</a>
-                    <a class="inner-block__text" href="">Уловия партнерской программы</a>
+                    <a class="inner-block__title" href="partner.html">партнерские программы</a>
+                    <a class="inner-block__text" href="partner.html">Уловия партнерской программы</a>
                 </div>
             </div>
             <div class="footer__inner">
                 <div class="inner-block">
                     <a class="inner-block__title" href="about.html">о нас</a>
                     <a class="inner-block__text" href="../index.html">Dizain Santehnika</a>
-                    <a class="inner-block__text" href="">Почему мы?</a>
+                    <a class="inner-block__text" href="about.html">Почему мы?</a>
                 </div>
                 <div class="inner-block">
-                    <a class="inner-block__title" href="">оплата и доставка</a>
-                    <a class="inner-block__text" href="">Уловия оплаты и доставки</a>
+                    <a class="inner-block__title" href="delivery.html">оплата и доставка</a>
+                    <a class="inner-block__text" href="delivery.html">Уловия оплаты и доставки</a>
                 </div>
                 <div class="inner-block">
                     <a class="inner-block__title" href="contact.html">контакты</a>
-                    <a class="inner-block__text" href="">Как до нас добраться</a>
+                    <a class="inner-block__text" href="contact.html">Как до нас добраться</a>
                 </div>
                 <div class="inner-block">
                     <a class="inner-block__title" href="">Тел.: +7 (915) 115-03-28</a>
@@ -304,6 +247,6 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="js/libs.min.js"></script>
-	<script src="js/main.js"></script>
+    <script src="js/about.js"></script>
 </body>
 </html>

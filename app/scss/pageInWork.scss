@@ -1,6 +1,4 @@
 @import "style";
-
-
 .pageInWork{
     &__container{
         justify-content: center;
@@ -14,6 +12,7 @@
     }
 }
 .catalogWorking{
+    background: $ns03;
     &__container{
         flex-direction: column;
     }
@@ -34,9 +33,4 @@
 }
 .text-container{
     max-width: 540px;
-}
-@media screen and (max-width: 1110px) {
-    .catalogWorking__title{
-        flex-direction: column;
-    }
 }

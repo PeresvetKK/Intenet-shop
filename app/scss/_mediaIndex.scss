@@ -107,7 +107,9 @@
             }
         }
     }
-
+    .catalogWorking__title{
+        flex-direction: column;
+    }
 }
 @media screen and (max-width: 769px) {
     .container{
@@ -151,6 +153,9 @@
     }
     .footer__inner{
         flex-wrap: wrap;
+    }
+    .components__text-box .text-box__main{
+        width: 100%;
     }
 }
 @media screen and (max-width: 480px) {
