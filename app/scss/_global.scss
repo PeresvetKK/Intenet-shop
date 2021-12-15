@@ -47,9 +47,6 @@ h2{
 h3{
     font-size: 24px;
 }
-section{
-    display: flex;
-}
 a{
     display: inline-block;
     text-decoration: none; 
@@ -65,8 +62,17 @@ li{
     margin: 0;
     padding: 0;
 }
+.icon{
+    fill: $ns;
+    cursor: pointer;
+}
+.icon:hover{
+    transition: .5s all;
+    fill: $bw !important;
+}
 section{
     padding: 9vh 0;
+    display: flex;
 }
 .container{
     display: flex;
@@ -76,7 +82,6 @@ section{
     margin: 0 auto;
     z-index: 15;
 }
-//----------------------------------------------------------HEADER----------------------------------------------------
 .header{
     width: 100%;
     z-index: 100;
@@ -99,6 +104,7 @@ section{
     }
     &__burger{
         display: none;
+        cursor: pointer;
     }
     .burger-active{
         span{
@@ -150,7 +156,6 @@ section{
     transition: .3s all;
     position: fixed;
 }
-
 .header-bw{
     background: $mw;
     box-shadow: 0px 14px 18px -13px rgba(34, 60, 80, 0.2);
@@ -188,6 +193,7 @@ section{
     text-transform: uppercase;
     cursor: pointer;
     text-align: center;
+    outline: none;
     &:hover{
         color: $ns;
         background: $bw;
@@ -364,6 +370,9 @@ input{
 }
 .footer{
     background: $ns;
+    &__icon{
+        fill: $mw;
+    }
 }
 .components{
     width: 100%;

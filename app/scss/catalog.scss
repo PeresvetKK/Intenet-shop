@@ -24,3 +24,16 @@
         font-size: inherit;
     }
 }
+.catalog__svg{
+    fill: $ns;
+}
+.catalog__item:hover{
+    transition: .5s all;
+    background-color: $ns;
+    .catalog__svg{
+        fill: $mw;
+    }
+    .catalog__text{
+        color: $mw;
+    }
+}
