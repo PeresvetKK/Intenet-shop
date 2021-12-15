@@ -33,6 +33,7 @@ burger.onclick = () =>{
 }
 
 //------------------------------------------------изменение шапки при скроле
+//------------------------------------------------------изменения header
 var $body = $('body'), $header = $('header'), $headerBtn = $('.header__btn');
 $(document).on('scroll', function () {
     var position = $body.scrollTop(), block_position = $('header').offset().top; // расположение блока, от которого и зависит фиксированность хэдера

@@ -29,6 +29,25 @@ $(function(){
         asNavFor: '.slider-dots', // связали два слайдера
     });
 });
+//------------------------------------------------------изменения header
+$(function() {
+    let header = $('.header');
+    let hederHeight = header.height(); // вычисляем высоту шапки
+     
+    $(window).scroll(function() {
+      if($(this).scrollTop() > 1) {
+       header.addClass('header__fixed');
+       $('body').css({
+          'paddingTop': hederHeight+'px' // делаем отступ у body, равный высоте шапки
+       });
+      } else {
+       header.removeClass('header__fixed');
+       $('body').css({
+        'paddingTop': 0 // удаляю отступ у body, равный высоте шапки
+       })
+      }
+    });
+});
 //------------------------------------------------------обработка формы
 const form = document.querySelector('.form');
 form.addEventListener('submit', formSend);

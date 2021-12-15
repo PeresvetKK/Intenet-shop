@@ -65,10 +65,12 @@ li{
     margin: 0;
     padding: 0;
 }
+section{
+    padding: 9vh 0;
+}
 .container{
     display: flex;
     align-items: center;
-    padding: 10% 0;
     width: 65%;
     max-width: 1440px;
     margin: 0 auto;
@@ -145,11 +147,10 @@ li{
     }
 }
 .header__fixed{
+    transition: .3s all;
     position: fixed;
 }
-.header-top{
-    margin-top: 10%;
-}
+
 .header-bw{
     background: $mw;
     box-shadow: 0px 14px 18px -13px rgba(34, 60, 80, 0.2);
