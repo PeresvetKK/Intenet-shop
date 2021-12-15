@@ -7,6 +7,8 @@ burger.onclick = () =>{
     activeMenu.classList.toggle('bottom-menu-active');
     burger.classList.toggle('burger-active');
 }
+//------------------------------------------------------изменения header
+
 
 //------------------------------------------------------обработка формы
 const form = document.querySelector('.form');
