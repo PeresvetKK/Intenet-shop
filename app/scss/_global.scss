@@ -45,7 +45,7 @@ h2{
     letter-spacing: .02em;
 }
 h3{
-    font-size: 1.2em;
+    font-size: 24px;
 }
 section{
     display: flex;
@@ -280,6 +280,9 @@ li{
 .white-text{
     color: $mw;
 }
+.disp-none{
+    display: none;
+}
 //-------------------------------------------------------------Форма
 .form{
     display: flex;
@@ -344,12 +347,16 @@ input{
         color: $ns;
         border: 1px solid $ns90;
     }
-    &:valid{
+    // &:valid{
+    //     color: $ns;
+    //     background: $mw;
+    //     border: 1px solid #34AC7E;
+    // }
+    &._error{
         color: $ns;
-        background: $mw;
-        border: 1px solid #34AC7E;
+        background: $mr10;
+        border: 1px solid transparent ;
     }
-    
 }
 .footer{
     background: $ns;
@@ -376,5 +383,29 @@ input{
     &__box{
         width: 220px;
         text-align: center;
+    }
+}
+.popup{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    top: 0;
+    left: 0;
+    z-index: 999;
+    &__inner{
+        min-height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    &__text-box{
+        width: 460px;
+        padding: 48px 22px;
+        background: $mw;
+    }
+    .text-box__main{
+        padding: 16px 0 32px 0;
     }
 }
