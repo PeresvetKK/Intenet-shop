@@ -172,6 +172,7 @@ section{
     border: 2px solid $mw;
     background: transparent;
     text-transform: uppercase;
+    text-align: center;
     cursor: pointer;
     transition: all .3s;
     &:hover{
@@ -190,6 +191,7 @@ section{
 }
 .btn-catalog{
     width: 188px;
+    text-align: center;
 }
 .btn-center{
     margin: 0 auto;
