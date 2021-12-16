@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/services.min.css">
     <title>Услуги</title>
 </head>
@@ -38,17 +39,7 @@
                 <nav class="nav">
                     <ul class="menu">
                         <li class="menu__list">
-                           <select  name="" id="catalog">
-                               <option value="Каталог">Каталог</option>
-                               <option value="Аксессуары">Аксессуары</option>
-                               <option value="Аксессуары">Аксессуары</option>
-                               <option value="Аксессуары">Аксессуары</option>
-                               <option value="Аксессуары">Аксессуары</option>
-                               <option value="Аксессуары">Аксессуары</option>
-                               <option value="Аксессуары">Аксессуары</option>
-                               <option value="Аксессуары">Аксессуары</option>
-                               <option value="Аксессуары">Аксессуары</option>
-                           </select>
+                            <a href="catalog.html" class="menu__link">каталог</a>
                         </li>
                         <li class="menu__list">
                             <a href="delivery.html" class="menu__link">оплата и доставка</a>
@@ -74,7 +65,7 @@
                     <nav class="nav">
                         <ul class="menu">
                             <li class="menu__list">
-                                <a href="" class="menu__link">каталог</a>
+                                <a href="catalog.html" class="menu__link">каталог</a>
                             </li>
                             <li class="menu__list">
                                 <a href="delivery.html" class="menu__link">оплата и доставка</a>
@@ -111,7 +102,7 @@
             </div>
         </div>
     </header>
-    <section class="aboutUs header-top">
+    <section class="aboutUs ">
         <div class="container about__container">
             <div class="about__text text-box">
                 <h2 class="text-box__title">услуги</h2>
@@ -216,19 +207,19 @@
                 <form class="form form__questons" action="">
                     <div class="form__box">
                         <label for="lname">Укажите имя и фамилию</label>
-                        <input type="text" id="lname" name="lname" placeholder="Иванов Иван"required >
+                        <input class="_req _name" type="text" id="lname" name="lname" placeholder="Иванов Иван" >
                     </div>
 
                     <div class="form__box">
                         <label for="ltel">Номер телефона</label>
-                        <input type="tel" id="ltel" name="ltel" placeholder="+7 (901) 999-88-77" required>
+                        <input class="_req _phone" type="tel" id="ltel" name="ltel" placeholder="+7 (901) 999-88-77">
                     </div>
 
                     <div class="form__box">
                         <label for="lemail">Адрес эл. почты</label>
-                        <input type="email" id="lemail" name="lemail" placeholder="example@yandex.ru" required>
+                        <input class="_req _email" type="email" id="lemail" name="lemail" placeholder="example@yandex.ru">
                     </div>
-                    <button class="btn btn-big">отправить</button>
+                    <button class="btn btn-big" type="submit">отправить</button>
                 </form>
             </div>
         </div>
@@ -240,7 +231,7 @@
             </div>
             <div class="footer__inner">
                 <div class="inner-block">
-                    <a class="inner-block__title" href="pageInWork.html">каталог</a>
+                    <a class="inner-block__title" href="catalog.html">каталог</a>
                     <a class="inner-block__text" href="pageInWork.html">Аксессуары</a>
                     <a class="inner-block__text" href="pageInWork.html">Готовые решения</a>
                     <a class="inner-block__text" href="pageInWork.html">Декор</a>
@@ -248,7 +239,7 @@
                     <a class="inner-block__text" href="pageInWork.html">Мебель</a>
                 </div>
                 <div class="inner-block">
-                    <a class="inner-block__title" href="pageInWork.html">каталог</a>
+                    <a class="inner-block__title" href="catalog.html">каталог</a>
                     <a class="inner-block__text" href="pageInWork.html">Cушители</a>
                     <a class="inner-block__text" href="pageInWork.html">Сантехника</a>
                     <a class="inner-block__text" href="pageInWork.html">Смесители</a>
@@ -301,6 +292,15 @@
             </div>
         </div>
     </footer>
+    <div class="popup popup__email disp-none">
+        <div class="popup__inner">
+            <div class="text-box popup__text-box">
+                <h3 class="text-box__title">готово</h3>
+                <p class="text-box__main">Мы получили вашу почту и обязательно сообщим вам о появлении данного раздела!</p>
+                <button class="btn btn-big btn-popup">закрыть</button>
+            </div>
+        </div>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="js/libs.min.js"></script>
 	<script src="js/services.js"></script>

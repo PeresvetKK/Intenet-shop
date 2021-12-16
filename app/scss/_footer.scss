@@ -1,0 +1,66 @@
+//--------------------------------------------------------------FOOTER-----------------------------------------------------------
+.footer{
+    background: $ns;
+    footer &__container{
+        width: 90%;
+        flex-direction: column;
+        padding: 3% 0 0 0;
+    }
+    &__header{
+        text-align: center;
+        padding-bottom: 3%;
+    }
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        color: $ns35;
+        padding: 2% 0;
+    }
+    &__header, &__inner{
+        width: 100%;
+        border-bottom: 2px solid rgba($color: #fff, $alpha: .3);
+    }
+    &__footer{
+        width: 100%;
+        display: flex;
+        padding: 32px 0 22px 0;
+        justify-content: center;
+    }
+    &__icon{
+        fill: $mw;
+    }
+}
+.inner-block{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    &__title{
+        font-size: inherit;
+    }
+    &__text{
+        font-size: 16px;
+        color: $ns35;
+        text-transform: none;
+        font-family: 'merriweather-regular';
+    }
+}
+@media screen and (max-width: 769px) {
+    .inner-block{
+        width: 178px;
+    }
+    .inner-block__title{
+        font-size: 14px;
+    }
+    .footer__inner{
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 480px){
+    .inner-block{
+        margin-bottom: 30px;
+    }
+    .footer__inner{
+        margin-top: 15px;
+    }
+}

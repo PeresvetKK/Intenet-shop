@@ -12,13 +12,13 @@ gulp.task('clean', async function(){
 })
 
 gulp.task('scss', function(){
-  return gulp.src('app/scss/**/*.scss')
-    .pipe(sass({outputStyle: 'compressed'}))
-    .pipe(autoprefixer({
+  return gulp.src('app/scss/*.scss')
+    .pipe(sass({outputStyle: 'compressed'})) // сжимаем файл
+    .pipe(autoprefixer({ // добавляем кроссбраузерность
       overrideBrowserslist: ['last 10 versions']
     }))
-    .pipe(rename({suffix: '.min'}))
-    .pipe(gulp.dest('app/css'))
+    .pipe(rename({suffix: '.min'})) // дописываем к названию файла .min
+    .pipe(gulp.dest('app/css')) // выводим в папку css
     .pipe(browserSync.reload({stream: true}))
 });
 
@@ -26,7 +26,6 @@ gulp.task('css', function(){
   return gulp.src([
     'node_modules/normalize.css/normalize.css',
     'node_modules/slick-carousel/slick/slick.css',
-    'node_modules/animate.css/animate.css',
   ])
     .pipe(concat('_libs.scss'))
     .pipe(gulp.dest('app/scss'))
@@ -46,7 +45,6 @@ gulp.task('script', function(){
 gulp.task('js', function(){
   return gulp.src([
     'node_modules/slick-carousel/slick/slick.js',
-    'node_modules/wow.js/dist/wow.js',
   ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
@@ -80,7 +78,7 @@ gulp.task('export', function(){
 });
 
 gulp.task('watch', function(){
-  gulp.watch('app/scss/**/*.scss', gulp.parallel('scss'));
+  gulp.watch('app/scss/*.scss', gulp.parallel('scss'));
   gulp.watch('app/*.html', gulp.parallel('html'))
   gulp.watch('app/js/*.js', gulp.parallel('script'))
 });

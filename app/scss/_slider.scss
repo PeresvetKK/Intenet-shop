@@ -1,0 +1,73 @@
+@import "_libs";
+//---------------------------------SLIDER-DOTS
+.slider-dots{
+    display: flex;
+    width: 500px;
+    margin-top: 48px;
+}
+.slick{
+    &-list{
+        width: 100%;
+    }
+    &-track{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+.dots-box__name{
+    color: $ns;
+    font-family: 'roboto-bold';
+    font-size: 24px;
+    line-height: 133%;
+    letter-spacing: 0.04em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-bottom: 4px solid transparent;
+    padding-bottom: 4px;
+    background: none;
+}
+.slick-current{
+    .dots-box__name{
+        border-bottom: 4px solid $bw;
+    }
+}
+//---------------------------------SLIDER
+.header__slider{
+    width: 100%;
+    display: flex;
+}
+.slider-item__info-title{
+    width: 69%;
+    margin-top: 16px;
+}
+.slider-item__info-img{
+    margin: 32px 0;
+}
+.slick-slide{
+    img{
+        width: 100%;
+    }
+}
+//----------------------------------------------------------секция COMPLITE----------------------------------------------------
+.complite{
+    &__container{
+        align-items: start;
+        flex-direction: column;
+        padding-bottom: 0;
+        .text-box{
+            width: 65%;
+        }
+    }
+}
+@media screen and (max-width: 769px) {
+    .slider-item__info-title{
+        width: 100%;
+    }
+    
+    .slider-dots{
+        width: 100%;
+    }
+}

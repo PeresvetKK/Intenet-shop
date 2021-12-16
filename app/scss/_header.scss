@@ -1,0 +1,205 @@
+.header{
+    width: 100%;
+    z-index: 100;
+    height: 160px;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    transition: all .5s;
+    .bottom-menu{
+        top: -100%;
+        display: none;
+    }
+    &__container{
+        width: 87.5%;
+        height: auto;
+        flex-direction: column;
+        padding: 0;
+    }
+    &__burger{
+        display: none;
+        cursor: pointer;
+    }
+    .burger-active{
+        span{
+            transform: scale(0);
+        }
+        &::before{
+            transform: rotate(45deg);
+            top: 8px;
+        }
+        &::after{
+            transform: rotate(-45deg);
+            bottom: 9px;
+        }
+    }
+    .down-header{
+        padding-top: 22px;
+    }
+    &__content{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &-title{
+            font-family: 'merriweather-black';
+            color: $mw;
+            font-size: 24px;
+            line-height: 133%;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+        }
+        &-icon{
+            display: flex;
+            align-items: center;
+        }
+        .icon{
+            fill: #fff;
+            cursor: pointer;
+        }
+        &:first-child{
+            border-bottom: 2px solid $mw;
+            padding-bottom: 19px;
+        }
+        &-icon .icon:last-child{
+            margin-left: 10px;
+        }
+    }
+}
+.header__fixed{
+    transition: .3s all;
+    position: fixed;
+}
+.header-bw{
+    background: $mw;
+    box-shadow: 0px 14px 18px -13px rgba(34, 60, 80, 0.2);
+    .header__content-title, #catalog, .menu__link{
+        color: $ns;
+    }
+    .header__content .icon{
+        fill: $ns;
+    }
+    .header__content:first-child{
+        border-bottom: 2px solid rgba($color: #000, $alpha: .1);
+    }
+}
+@media screen and (max-width: 1101px) {
+    .down-header, .content-icon__left{
+        display: none;
+    }
+    .header{
+        height: 80px !important;
+        background: $mw;
+        &__burger{
+            display: block;
+            position: relative;
+            width: 24px;
+            height: 19px;
+            span{
+                transition: all 0.2s;
+                position: absolute;
+                background-color: $ns;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                top: 9px;
+            }
+            &::before, &::after{
+                content: '';
+                background-color: $ns;
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                left: 0;
+                transition: all 0.5s;
+            }
+            &::before{
+                top: 0;
+            }
+            &::after{
+                bottom: 0;
+            } 
+        }
+    }
+    .header__container .header__content{
+        &:first-child{
+            padding-bottom: 0;
+            border: none;
+        }
+        &:last-child{
+            display: none;
+        }
+        &-title{
+            color: $ns;
+        }
+        .icon{
+            fill: $ns;
+        }
+    }
+    .bottom-menu{
+        position: fixed;
+        left: 0;
+        width: 100%;
+        margin-top: 80px;
+        height: 100%;
+        background: $mw;
+        .menu__link, #catalog{
+            color: $ns;
+        }
+    }
+    .bottom-menu-active{
+        display: block !important;
+        top: 0 !important;
+    }
+    .nav{
+        height: 70%;
+        border-bottom: 2px solid rgba($color: #232630, $alpha: .1);
+    }
+    .menu__logo{
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu{
+        height: 100%;
+        align-items: flex-start;
+        flex-direction: column;
+        &__container{
+            width: 87.5%;
+            height: 100%;
+            margin: 0 auto;
+        }
+        &__list{
+            width: 100%;
+            height: 15%;
+            margin-left: 0 !important;
+            display: flex;
+            align-items: center;
+            border-top: 2px solid rgba($color: #232630, $alpha: .1);
+        }
+        &__link{
+            font-size: 16px;
+        }
+        &__logo{
+            svg{
+                fill: $ns;
+            }
+        }
+    }
+}
+@media screen and (max-width: 769px) {
+    .header__content-title{
+        font-size: 16px;
+    }
+    .header__content-icon .icon:last-child{
+        margin-left: 15px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .header__container, .menu__container{
+        width: 90%;
+    }
+}

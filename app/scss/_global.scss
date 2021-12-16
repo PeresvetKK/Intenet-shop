@@ -1,3 +1,5 @@
+@import "_vars";
+@import "_fonts";
 html{
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -62,6 +64,36 @@ li{
     margin: 0;
     padding: 0;
 }
+//----------------------------------------------------------секция MAIN------------------------------------------------------
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;                                                                 
+    background-image: url(../images/bg_img.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+
+    &::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: inherit;
+        height: inherit;
+        z-index: 2;
+        background-color: rgba(35, 38, 48, 0.5);
+    }
+    &__container{
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__title{
+        max-width: 800px;
+        color: $mw;
+    }
+}
 .icon{
     fill: $ns;
     cursor: pointer;
@@ -81,94 +113,11 @@ section{
     max-width: 1440px;
     margin: 0 auto;
     z-index: 15;
-}
-.header{
-    width: 100%;
-    z-index: 100;
-    height: 160px;
-    position: relative;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    transition: all .5s;
-    .bottom-menu{
-        top: -100%;
-        display: none;
-    }
-    &__container{
-        width: 87.5%;
-        height: auto;
-        flex-direction: column;
-        padding: 0;
-    }
-    &__burger{
-        display: none;
-        cursor: pointer;
-    }
-    .burger-active{
-        span{
-            transform: scale(0);
-        }
-        &::before{
-            transform: rotate(45deg);
-            top: 8px;
-        }
-        &::after{
-            transform: rotate(-45deg);
-            bottom: 9px;
-        }
-    }
-    .down-header{
-        padding-top: 22px;
-    }
-    &__content{
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        &-title{
-            font-family: 'merriweather-black';
-            color: $mw;
-            font-size: 24px;
-            line-height: 133%;
-            letter-spacing: 0.04em;
-            text-transform: uppercase;
-        }
-        &-icon{
-            display: flex;
-            align-items: center;
-        }
-        .icon{
-            fill: #fff;
-            cursor: pointer;
-        }
-        &:first-child{
-            border-bottom: 2px solid $mw;
-            padding-bottom: 19px;
-        }
-        &-icon .icon:last-child{
-            margin-left: 10px;
-        }
+    &-center{
+        justify-content: center !important;
     }
 }
-.header__fixed{
-    transition: .3s all;
-    position: fixed;
-}
-.header-bw{
-    background: $mw;
-    box-shadow: 0px 14px 18px -13px rgba(34, 60, 80, 0.2);
-    .header__content-title, #catalog, .menu__link{
-        color: $ns;
-    }
-    .header__content .icon{
-        fill: $ns;
-    }
-    .header__content:first-child{
-        border-bottom: 2px solid rgba($color: #000, $alpha: .1);
-    }
-}
+
 .menu{
     display: flex;
     align-items: center;
@@ -240,6 +189,9 @@ section{
 }
 .btn-catalog{
     width: 188px;
+}
+.btn-center{
+    margin: 0 auto;
 }
 #catalog{
     border: none;
@@ -368,11 +320,10 @@ input{
         border: 1px solid transparent ;
     }
 }
-.footer{
-    background: $ns;
-    &__icon{
-        fill: $mw;
-    }
+//----------------------------------------------------------секция QUESTIONS----------------------------------------------------
+.questions__container{
+    justify-content: space-between;
+    align-items: flex-start;
 }
 .components{
     width: 100%;
@@ -422,3 +373,7 @@ input{
         padding: 16px 0 32px 0;
     }
 }
+
+@import "_header";
+@import "_footer";
+@import "_mediaIndex";

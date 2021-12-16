@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/pageInWork.min.css">
     <title>Страница в разработке</title>
 </head>
@@ -38,17 +39,7 @@
                 <nav class="nav">
                     <ul class="menu">
                         <li class="menu__list">
-                           <select  name="" id="catalog">
-                               <option value="Каталог">Каталог</option>
-                               <option value="Аксессуары">Аксессуары</option>
-                               <option value="Аксессуары">Аксессуары</option>
-                               <option value="Аксессуары">Аксессуары</option>
-                               <option value="Аксессуары">Аксессуары</option>
-                               <option value="Аксессуары">Аксессуары</option>
-                               <option value="Аксессуары">Аксессуары</option>
-                               <option value="Аксессуары">Аксессуары</option>
-                               <option value="Аксессуары">Аксессуары</option>
-                           </select>
+                            <a href="catalog.html" class="menu__link">каталог</a>
                         </li>
                         <li class="menu__list">
                             <a href="delivery.html" class="menu__link">оплата и доставка</a>
@@ -74,7 +65,7 @@
                     <nav class="nav">
                         <ul class="menu">
                             <li class="menu__list">
-                                <a href="" class="menu__link">каталог</a>
+                                <a href="catalog.html" class="menu__link">каталог</a>
                             </li>
                             <li class="menu__list">
                                 <a href="delivery.html" class="menu__link">оплата и доставка</a>
@@ -111,7 +102,7 @@
             </div>
         </div>
     </header>
-    <section class="pageInWork header-top">
+    <section class="pageInWork">
         <div class="container pageInWork__container">
             <div class="text-box components__text-box">
                 <h2 class="text-box__title">страница в разработке</h2>
@@ -119,7 +110,7 @@
                 <form class="form form__questons" action="">
                     <div class="form__box">
                         <label for="lemail">Адрес эл. почты</label>
-                        <input type="email" id="lemail" name="lemail" placeholder="example@yandex.ru" required>
+                        <input class="_req _email" type="email" id="lemail" name="lemail" placeholder="example@yandex.ru">
                     </div>
                     <button class="btn btn-big btn-center" type="submit">отправить</button>
                 </form>
@@ -134,8 +125,8 @@
                     <p class="text-container__text">Пока вы ждете раздел, предлгаем вам ознакомитсья с ассортиментом продукции.</p>
                 </div>
                 <div class="catalogWorking__title-go">
-                    <a  href="pageInWork.html">Перейти в каталог</a>
-                    <a href="pageInWork.html"><svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <a  href="catalog.html">Перейти в каталог</a>
+                    <a href="catalog.html"><svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M15.3643 6.56003L10.3843 11.56C10.2243 11.72 10.0243 11.8 9.82429 11.8C9.62429 11.8 9.4243 11.72 9.2643 11.56C8.94429 11.24 8.94429 10.74 9.2643 10.42L12.8843 6.78003H1.2043C0.764297 6.78003 0.404297 6.42003 0.404297 5.98003C0.404297 5.54003 0.764297 5.18003 1.2043 5.18003H12.8843L9.2643 1.54004C8.94429 1.22004 8.94429 0.720034 9.2643 0.400034C9.5843 0.0800342 10.0843 0.0800342 10.4043 0.400034L15.3843 5.40003C15.6843 5.74003 15.6843 6.26003 15.3643 6.56003Z" fill="#232630"/>
                     </svg></a>
                 </div>
@@ -184,7 +175,7 @@
             </div>
             <div class="footer__inner">
                 <div class="inner-block">
-                    <a class="inner-block__title" href="pageInWork.html">каталог</a>
+                    <a class="inner-block__title" href="catalog.html">каталог</a>
                     <a class="inner-block__text" href="pageInWork.html">Аксессуары</a>
                     <a class="inner-block__text" href="pageInWork.html">Готовые решения</a>
                     <a class="inner-block__text" href="pageInWork.html">Декор</a>
@@ -192,7 +183,7 @@
                     <a class="inner-block__text" href="pageInWork.html">Мебель</a>
                 </div>
                 <div class="inner-block">
-                    <a class="inner-block__title" href="pageInWork.html">каталог</a>
+                    <a class="inner-block__title" href="catalog.html">каталог</a>
                     <a class="inner-block__text" href="pageInWork.html">Cушители</a>
                     <a class="inner-block__text" href="pageInWork.html">Сантехника</a>
                     <a class="inner-block__text" href="pageInWork.html">Смесители</a>
@@ -245,6 +236,15 @@
             </div>
         </div>
     </footer>
+    <div class="popup popup__email disp-none">
+        <div class="popup__inner">
+            <div class="text-box popup__text-box">
+                <h3 class="text-box__title">готово</h3>
+                <p class="text-box__main">Мы получили вашу почту и обязательно сообщим вам о появлении данного раздела!</p>
+                <button class="btn btn-big btn-popup">закрыть</button>
+            </div>
+        </div>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="js/libs.min.js"></script>
     <script src="js/about.js"></script>

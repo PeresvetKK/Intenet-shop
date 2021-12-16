@@ -4,109 +4,6 @@
     }
 }
 @media screen and (max-width: 1101px) {
-    .down-header, .content-icon__left{
-        display: none;
-    }
-    .header{
-        height: 80px !important;
-        background: $mw;
-        &__burger{
-            display: block;
-            position: relative;
-            width: 24px;
-            height: 19px;
-            span{
-                transition: all 0.2s;
-                position: absolute;
-                background-color: $ns;
-                left: 0;
-                width: 100%;
-                height: 2px;
-                top: 9px;
-            }
-            &::before, &::after{
-                content: '';
-                background-color: $ns;
-                position: absolute;
-                width: 100%;
-                height: 2px;
-                left: 0;
-                transition: all 0.5s;
-            }
-            &::before{
-                top: 0;
-            }
-            &::after{
-                bottom: 0;
-            } 
-        }
-    }
-    .header__container .header__content{
-        &:first-child{
-            padding-bottom: 0;
-            border: none;
-        }
-        &:last-child{
-            display: none;
-        }
-        &-title{
-            color: $ns;
-        }
-        .icon{
-            fill: $ns;
-        }
-    }
-    .bottom-menu{
-        position: fixed;
-        left: 0;
-        width: 100%;
-        margin-top: 80px;
-        height: 100%;
-        background: $mw;
-        .menu__link, #catalog{
-            color: $ns;
-        }
-    }
-    .bottom-menu-active{
-        display: block !important;
-        top: 0 !important;
-    }
-    .nav{
-        height: 70%;
-        border-bottom: 2px solid rgba($color: #232630, $alpha: .1);
-    }
-    .menu__logo{
-        height: 20%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .menu{
-        height: 100%;
-        align-items: flex-start;
-        flex-direction: column;
-        &__container{
-            width: 87.5%;
-            height: 100%;
-            margin: 0 auto;
-        }
-        &__list{
-            width: 100%;
-            height: 15%;
-            margin-left: 0 !important;
-            display: flex;
-            align-items: center;
-            border-top: 2px solid rgba($color: #232630, $alpha: .1);
-        }
-        &__link{
-            font-size: 16px;
-        }
-        &__logo{
-            svg{
-                fill: $ns;
-            }
-        }
-    }
     .catalogWorking__title{
         flex-direction: column;
     }
@@ -115,20 +12,11 @@
     .container{
         width: 81%;
     }
-    .header__content-title{
-        font-size: 16px;
-    }
-    .header__content-icon .icon:last-child{
-        margin-left: 15px;
-    }
     .text-box{
         width: 100% !important;
     }
     .howtake__container{
         justify-content: center;
-    }
-    .slider-item__info-title{
-        width: 100%;
     }
     .howtake__inner{
         align-items: initial;
@@ -139,37 +27,16 @@
             width: 100%;
         }
     }
-    .slider-dots{
-        width: 100%;
-    }
     .form__box {
         width: 100%;
-    }
-    .inner-block{
-        width: 178px;
-    }
-    .inner-block__title{
-        font-size: 14px;
-    }
-    .footer__inner{
-        flex-wrap: wrap;
     }
     .components__text-box .text-box__main{
         width: 100%;
     }
 }
 @media screen and (max-width: 480px) {
-    .header__container, .menu__container{
-        width: 90%;
-    }
     .main__title{
         font-size: 48px;
         line-height: 117%;
-    }
-    .inner-block{
-        margin-bottom: 30px;
-    }
-    .footer__inner{
-        margin-top: 15px;
     }
 }
