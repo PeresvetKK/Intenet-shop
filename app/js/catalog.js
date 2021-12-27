@@ -32,12 +32,13 @@ $(function() {
 let priceSlider = document.querySelector('.price-filter');
 
 noUiSlider.create(priceSlider, {
-    start: [20, 90],
-    //tooltips: [false, decimals: 1 ,]
+    start: [9500, 35000],
+    tooltips: [true, true],
     connect: true,
+    margin: 20,
     range: {
-        'min': 0,
-        'max': 100
+        'min': 3000,
+        'max': 35000
     }
 });
 

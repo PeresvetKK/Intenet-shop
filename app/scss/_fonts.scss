@@ -2,15 +2,23 @@
 @font-face {
 	font-family: 'oswald-bold';
 	src: url('../fonts/Oswald-Bold.eot');
-	src: local('☺'), url('../fonts/Oswald-Bold.woff') format('woff'), url('../fonts/Oswald-Bold.ttf') format('truetype'), url('../fonts/Oswald-Bold.svg') format('svg');
+	src: local('☺'), url('../fonts/Oswald-Bold.woff') format('woff'), url('../fonts/Oswald-Bold.ttf') format('truetype');
 	font-weight: 700;
+	font-style: normal;
+}
+// 400 Oswald-Regular
+@font-face {
+	font-family: 'oswald-regular';
+	src: url('../fonts/Oswald-Regular.eot');
+	src: local('☺'), url('../fonts/Oswald-Regular.woff') format('woff'), url('../fonts/Oswald-Regular.ttf') format('truetype');
+	font-weight: normal;
 	font-style: normal;
 }
 // 700 Roboto Condensed-Bold
 @font-face {
 	font-family: 'roboto-bold';
 	src: url('../fonts/Roboto-Bold.eot');
-	src: local('☺'), url('../fonts/Roboto-Bold.woff') format('woff'), url('../fonts/Roboto-Bold.ttf') format('truetype'), url('../fonts/Roboto-Bold.svg') format('svg');
+	src: local('☺'), url('../fonts/Roboto-Bold.woff') format('woff'), url('../fonts/Roboto-Bold.ttf') format('truetype');
 	font-weight: 700;
 	font-style: normal;
 }
@@ -18,7 +26,7 @@
 @font-face {
 	font-family: 'roboto-regular';
 	src: url('../fonts/Roboto-Regular.eot');
-	src: local('☺'), url('../fonts/Roboto-Regular.woff') format('woff'), url('../fonts/Roboto-Regular.ttf') format('truetype'), url('../fonts/Roboto-Regular.svg') format('svg');
+	src: local('☺'), url('../fonts/Roboto-Regular.woff') format('woff'), url('../fonts/Roboto-Regular.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -26,7 +34,7 @@
 @font-face {
 	font-family: 'merriweather-black';
 	src: url('../fonts/Merriweather-Black.eot');
-	src: local('☺'), url('../fonts/Merriweather-Black.woff') format('woff'), url('../fonts/Merriweather-Black.ttf') format('truetype'), url('../fonts/Merriweather-Black.svg') format('svg');
+	src: local('☺'), url('../fonts/Merriweather-Black.woff') format('woff'), url('../fonts/Merriweather-Black.ttf') format('truetype');
 	font-weight: 900;
 	font-style: normal;
 }
@@ -34,7 +42,7 @@
 @font-face {
 	font-family: 'merriweather-regular';
 	src: url('../fonts/Merriweather-Regular.eot');
-	src: local('☺'), url('../fonts/Merriweather-Regular.woff') format('woff'), url('../fonts/Merriweather-Regular.ttf') format('truetype'), url('../fonts/Merriweather-Regular.svg') format('svg');
+	src: local('☺'), url('../fonts/Merriweather-Regular.woff') format('woff'), url('../fonts/Merriweather-Regular.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
