@@ -33,7 +33,12 @@ let priceSlider = document.querySelector('.price-filter');
 
 noUiSlider.create(priceSlider, {
     start: [9500, 35000],
-    tooltips: [true, true],
+    format: wNumb({
+      decimals: 0,
+      suffix: '₽',
+      thousand: '.',
+    }),
+    tooltips: [wNumb({decimals: 0}), wNumb({decimals: 0})],
     connect: true,
     margin: 20,
     range: {

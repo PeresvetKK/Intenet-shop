@@ -575,7 +575,7 @@ template {
 }
 
 .noUi-connect {
-  background: $bw;
+  background: #B0DCE2;
 }
 /* Handles and cursors;
  */
@@ -589,9 +589,6 @@ template {
 .noUi-active {
   box-shadow: inset 0 0 1px #FFF, inset 0 1px 7px #DDD, 0 3px 6px -3px #BBB;
 }
-/* Handle stripes;
- */
-
 /* Disabled state;
  */
 [disabled] .noUi-connect {
@@ -701,6 +698,7 @@ template {
   display: block;
   position: absolute;
   color: #000;
+  padding: 5px;
   text-align: center;
   white-space: nowrap;
   font-family: 'oswald-regular';
