@@ -23,7 +23,7 @@ $(function(){ // настройки для слайдеров
     });
 });
 
-//--------------------------------------------------- открытие меню
+//-----------------------------------------------------------------------открытие меню
 let burger = document.querySelector('.burger');
 let activeMenu = document.querySelector(".bottom-menu");
 
@@ -32,7 +32,7 @@ burger.onclick = () =>{
     burger.classList.toggle('burger-active');
 }
 
-//------------------------------------------------изменение шапки при скроле
+//--------------------------------------------------------------------изменение шапки при скроле
 //------------------------------------------------------изменения header
 var $body = $('body'), $header = $('header'), $headerBtn = $('.header__btn');
 $(document).on('scroll', function () {
@@ -50,7 +50,7 @@ $(document).on('scroll', function () {
     }
 });
 
-//------------------------------------------------------обработка формы
+//---------------------------------------------------------------------------обработка формы
 const form = document.querySelector('.form');
 form.addEventListener('submit', formSend);
 
@@ -63,7 +63,7 @@ async function formSend(e){
         openPopup();
     }
 }
-//---------------------------------------------------------валидация формы
+//---------------------------------------------------------------валидация формы
 function formValidate(form){
     let error = 0;
     let formReq = document.querySelectorAll('._req'); // обязательное поле
@@ -100,7 +100,7 @@ function formRemoveError(input) {
 function emailTest(input) {
     return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
 }
-// появление попап
+//------------------------------------------------------------------появление попап
 function openPopup() {
     let popup = document.querySelector('.popup'); // берем сам попап
     let btnPopup = document.querySelector('.btn-popup'); // берем кнопку закрытия

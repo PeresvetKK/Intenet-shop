@@ -1,4 +1,5 @@
 @import "_global";
+@import "_filter";
 .catalog{
     background-color: $ns05;
     &__container{
@@ -22,13 +23,6 @@
     padding: 12px 76px;
     align-self: center;
     margin-top: 24px;
-}
-.filter{
-    max-width: 220px;
-    width: 100%;
-    height: 600px;
-    background-color: $mw;
-    grid-area: filters;
 }
 .var{
     width: 100%;

@@ -26,3 +26,22 @@ $(function() {
       }
     });
 });
+
+// -----------------------------------------------------------------------Фильтр
+
+let priceSlider = document.querySelector('.price-filter');
+
+noUiSlider.create(priceSlider, {
+    start: [20, 90],
+    //tooltips: [false, decimals: 1 ,]
+    connect: true,
+    range: {
+        'min': 0,
+        'max': 100
+    }
+});
+
+// setButton.addEventListener('click', function(){
+//     animatedSlider.noUiSlider.set(60);
+//     unAnimatedSlider.noUiSlider.set(60);
+// });

@@ -1,0 +1,37 @@
+@import "_libs";
+.filter{
+    max-width: 220px;
+    width: 100%;
+    height: 600px;
+    background-color: $mw;
+    grid-area: filters;
+    &__body{
+        height: 100%;
+    }
+}
+.section-filter{
+    padding: 16px;
+    border-bottom: 1px solid $ns10;
+    &__title{
+        font-family: 'oswald-bold';
+        font-size: 12px;
+        line-height: 200%;
+        text-transform: uppercase;
+        padding-bottom: 16px;
+    }
+}
+.price-filter{
+    height: 2px;
+    position: relative;
+    width: 100%;
+    background-color: $ns10;
+    .noUi-handle{
+        
+        width: 16px;
+        height: 16px;
+        top: -6px;
+        border-radius: 50%;
+        background: $bw;
+        cursor: pointer;
+    }
+}
