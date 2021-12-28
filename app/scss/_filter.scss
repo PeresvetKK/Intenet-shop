@@ -2,16 +2,16 @@
 .filter{
     max-width: 220px;
     width: 100%;
-    height: 600px;
+    height: max-content;
     background-color: $mw;
     grid-area: filters;
-    &__body{
-        height: 100%;
-    }
 }
 .section-filter{
-    padding: 20px;
+    padding: 20px 20px 0 20px;
     border-bottom: 1px solid $ns10;
+    &__body{
+        padding-bottom: 20px;
+    }
     &__title{
         display: flex;
         justify-content: space-between;
@@ -23,13 +23,15 @@
         padding-bottom: 16px;
     }
     .margin-filter{
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
     .filter-title__svg{
         cursor: pointer;
     }
 }
-
+.section-filter:last-child{
+    border-bottom: none;
+}
 
 // price-filter
 .price-filter{
@@ -113,5 +115,6 @@
         font-size: 12px;
         line-height: 133%;
         color: $ns90;
+        padding-left: 10px;
     }
 }

@@ -248,6 +248,9 @@ section{
 .disp-none{
     display: none;
 }
+.rotate-180{
+    transform: rotate(180deg);
+}
 //-------------------------------------------------------------Форма
 .form{
     display: flex;
