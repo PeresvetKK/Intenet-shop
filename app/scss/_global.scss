@@ -301,6 +301,7 @@ input{
     background: $ns05;
     padding: 16px 0 16px 16px;
     border: 1px solid transparent;
+    width: 100%;
     &::placeholder{
         color: $ns35;
         font-family: 'roboto-regular';

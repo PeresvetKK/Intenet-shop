@@ -1,5 +1,5 @@
 @import "_global";
-@import "_filter";
+
 .catalog{
     background-color: $ns05;
     &__container{
@@ -23,7 +23,13 @@
     padding: 12px 76px;
     align-self: center;
     margin-top: 24px;
+    &__active{
+        position: absolute;
+        z-index: 2;
+        top: 65px;
+    }
 }
+
 .var{
     width: 100%;
     grid-area: item;
@@ -60,3 +66,4 @@
         display: block;
     }
 }
+@import "_filter";
