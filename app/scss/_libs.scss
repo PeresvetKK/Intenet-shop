@@ -509,7 +509,7 @@ template {
   top: 0;
   right: 0;
   height: 100%;
-  width: 100%;
+  width: 93%;
   -ms-transform-origin: 0 0;
   -webkit-transform-origin: 0 0;
   -webkit-transform-style: preserve-3d;
@@ -551,13 +551,11 @@ template {
 }
 /* Slider size and handle placement;
  */
-.noUi-horizontal {
-  height: 18px;
-}
+
 .noUi-horizontal .noUi-handle {
   width: 34px;
   height: 28px;
-  right: -8px;
+  right: -1px;
   top: -6px;
 }
 .noUi-vertical {
@@ -702,8 +700,7 @@ template {
   text-align: center;
   white-space: nowrap;
   font-family: 'oswald-regular';
-  font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 133%;
   letter-spacing: inherit;
 }

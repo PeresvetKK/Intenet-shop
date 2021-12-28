@@ -32,22 +32,13 @@ $(function() {
 let priceSlider = document.querySelector('.price-filter');
 
 noUiSlider.create(priceSlider, {
-    start: [9500, 35000],
-    format: wNumb({
-      decimals: 0,
-      suffix: '₽',
-      thousand: '.',
-    }),
-    tooltips: [wNumb({decimals: 0}), wNumb({decimals: 0})],
+    start: [3000, 28000],
+    margin: 8000,
+    
+    tooltips: [wNumb({decimals: 0, suffix: ' ₽'}), wNumb({decimals: 0, suffix: ' ₽'})],
     connect: true,
-    margin: 20,
     range: {
         'min': 3000,
-        'max': 35000
+        'max': 35000,
     }
 });
-
-// setButton.addEventListener('click', function(){
-//     animatedSlider.noUiSlider.set(60);
-//     unAnimatedSlider.noUiSlider.set(60);
-// });

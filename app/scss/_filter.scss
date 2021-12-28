@@ -10,16 +10,28 @@
     }
 }
 .section-filter{
-    padding: 16px;
+    padding: 20px;
     border-bottom: 1px solid $ns10;
     &__title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         font-family: 'oswald-bold';
         font-size: 12px;
         line-height: 200%;
         text-transform: uppercase;
         padding-bottom: 16px;
     }
+    .margin-filter{
+        margin-bottom: 20px;
+    }
+    .filter-title__svg{
+        cursor: pointer;
+    }
 }
+
+
+// price-filter
 .price-filter{
     height: 2px;
     position: relative;
@@ -32,5 +44,74 @@
         border-radius: 50%;
         background: $bw;
         cursor: pointer;
+    }
+}
+
+
+// checkbox-filter
+.check{
+    font-family: 'oswald-regular';
+    font-size: 12px;
+    line-height: 133%;
+    color: $ns90;
+    padding-left: 20px;
+    &__input{
+        position: absolute;
+        opacity: 0;
+    }
+    &__box{
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        background-color: $mw;
+        border: 1px solid $ns25;
+        margin-left: -20px;
+    }
+}
+.option{
+    display: block;
+    margin-bottom: 8px;
+
+}
+// checked
+.check__input:checked + .check__box{
+    background-color: $bw;
+    background-image: url(../images/checked.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-color: $bw;
+}
+// checked + hover
+.check__input:checked:hover + .check__box{
+    border-color: $bw25;
+    background-color: $bw;
+    background-image: url(../images/checked.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+// hover
+.check__input:hover + .check__box{
+    border-color: $bw;
+    background: $mw;
+}
+
+//range-filter
+.range-filter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    .tire{
+        width: 8px;
+        height: 1px;
+        background: $ns;
+    }
+    #input-number{
+        width: 82px;
+        height: 32px;
+        font-family: 'oswald-regular';
+        font-size: 12px;
+        line-height: 133%;
+        color: $ns90;
     }
 }
