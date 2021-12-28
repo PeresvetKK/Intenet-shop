@@ -48,6 +48,13 @@
     grid-template-columns: 220px 1fr;
     grid-gap: 1rem;
     margin-top: 32px;
+    &__text{
+        color: $ns;
+        font-family: 'merriweather-regular';
+        font-size: 16px;
+        line-height: 150%;
+        text-transform: none;
+    }
 }
 @media screen and (max-width: 1100px) {
     .mini-catalog{
