@@ -5,6 +5,10 @@
     height: max-content;
     background-color: $mw;
     grid-area: filters;
+    &__body{
+        width: 80%;
+        margin: 0 auto;
+    }
 }
 .adaptive-filter{
     display: block;
@@ -13,7 +17,7 @@
     max-width: 100%;
 }
 .section-filter{
-    padding: 20px 20px 0 20px;
+    padding: 20px 0 0 0;
     border-bottom: 1px solid $ns10;
     &__body{
         padding-bottom: 20px;
@@ -125,5 +129,11 @@
         line-height: 133%;
         color: $ns90;
         padding-left: 10px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .filter__body{
+        width: 220px;
     }
 }

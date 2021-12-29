@@ -59,7 +59,6 @@ filtrBtn.onclick = () =>{
 	
     filter.classList.toggle('adaptive-filter');
 	filtrBtn.classList.toggle('filter-btn__active');
-
 	if(filtrBtn.classList.contains('filter-btn__active')){
 		document.getElementById('filter-btn').innerHTML = 'Применить';
 	}else{

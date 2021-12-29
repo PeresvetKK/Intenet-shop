@@ -248,6 +248,9 @@ section{
 .disp-none{
     display: none;
 }
+.fixed{
+    overflow: hidden;
+}
 .rotate-180{
     transform: rotate(180deg);
 }
