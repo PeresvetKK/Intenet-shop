@@ -260,6 +260,13 @@ section{
         font-size: 24px;
         line-height: 133%;
     }
+    &__text{
+        color: $ns;
+        font-family: 'merriweather-regular';
+        font-size: 16px;
+        line-height: 150%;
+        text-transform: none;
+    }
 }
 .text-box{
     &__main{
