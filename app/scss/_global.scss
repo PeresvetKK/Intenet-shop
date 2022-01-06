@@ -40,15 +40,19 @@ h1{
     font-size: 64px;
     line-height: 112%;
     text-align: center;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.04em;
 }
 h2{
-    font-size: 3em;
+    font-size: 2.3em;
     line-height: 117%;
     letter-spacing: .02em;
 }
 h3{
     font-size: 24px;
+}
+h4{
+    font-size: 16px;
+    line-height: 150%;
 }
 a{
     display: inline-block;
@@ -192,6 +196,21 @@ section{
 .btn-catalog{
     width: 188px;
     text-align: center;
+}
+.btn-item{
+    width: 112px;
+    text-align: center;
+    background-color: $mw;
+    color: $ns;
+    font-size: 16px;
+    line-height: 150%;
+    font-family: 'merriweather-regular';
+    border: none;
+    padding: 8px 0;
+    &:active{
+        background-color: $bw;
+        text-transform: none;
+    }
 }
 .btn-center{
     margin: 0 auto;

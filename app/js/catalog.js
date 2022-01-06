@@ -41,6 +41,7 @@ noUiSlider.create(priceSlider, {
     }
 });
 // --------------------------------сворачивание контента
+let filterBody = document.getElementsByClassName('filter__body');
 let arrow = document.getElementsByClassName('filter-title__svg');
 let dropdown = document.getElementsByClassName('section-filter__body');
 
@@ -59,6 +60,7 @@ filtrBtn.onclick = () =>{
 	
     filter.classList.toggle('adaptive-filter');
 	filtrBtn.classList.toggle('filter-btn__active');
+
 	if(filtrBtn.classList.contains('filter-btn__active')){
 		document.getElementById('filter-btn').innerHTML = 'Применить';
 	}else{
