@@ -32,6 +32,7 @@
 
 .var{
     width: 100%;
+    height: max-content;
     grid-area: item;
     display: grid;
     justify-content: center;

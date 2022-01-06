@@ -115,7 +115,7 @@ section{
     display: flex;
     align-items: center;
     width: 65%;
-    max-width: 1440px;
+    max-width: 1260px;
     margin: 0 auto;
     z-index: 15;
     &-center{
@@ -207,8 +207,15 @@ section{
     font-family: 'merriweather-regular';
     border: none;
     padding: 8px 0;
+    cursor: pointer;
+    &:hover{
+        background-color: $ns;
+        color: $mw;
+        transition: .3s all;
+    }
     &:active{
         background-color: $bw;
+        color: $ns;
         text-transform: none;
     }
 }
@@ -232,7 +239,11 @@ section{
     margin-top: 32px;
     &__item{
         width: 220px;
-       background: $mw;
+        max-height: 402px;
+        background: $mw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     &__inner-item{
         width: 188px;
@@ -240,11 +251,9 @@ section{
         padding: 24px 0;
     }
     &__img{
-        width: 100%;
+        width: 121px;
         height: 160px;
-        background-image: url(../images/leica.png);
-        background-repeat: no-repeat;
-        background-position: top;
+        
     }
     &__price{
         margin: 16px 0 24px 0;
@@ -266,6 +275,7 @@ section{
 }
 .disp-none{
     display: none;
+    transition: .5s all;
 }
 .fixed{
     overflow: hidden;
@@ -400,7 +410,29 @@ input{
         padding: 16px 0 32px 0;
     }
 }
-
+.slider-arrows{
+    cursor: pointer;
+}
+.catalogWorking{
+    background: $ns03;
+    &__container{
+        flex-direction: column;
+    }
+    &__title{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-go{
+            display: flex;
+            align-items: center;
+            a{
+                color: $ns;
+                margin-right: 12px;
+            }
+        }
+    }
+}
 @import "_header";
 @import "_footer";
 @import "_mediaIndex";

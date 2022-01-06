@@ -7,7 +7,8 @@
         align-items: start;
     }
     &__title{
-        max-width: 678px;
+        max-width: 700px;
+        margin-bottom: 32px;
     }
     &__items{
         width: 100%;
@@ -24,15 +25,28 @@
     max-width: 300px;
     &__img{
         max-width: 300px;
+        max-height: 448px;
     }
     &__slider{
+        width: 60%;
+        margin: 0 auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        .slick-list{
+            padding-left: 10px;
+        }
     }
     &__item{
         cursor: pointer;
+        img{
+            width: 32px;
+            height: 40px;
+        }
     }
+}
+.slick-slide{
+    width: 56px;
 }
 .settings-slider{
     background-color: $ns05;
@@ -74,6 +88,7 @@
         text-transform: none;
         position: relative;
         padding-right: 5px;
+        cursor: pointer;
         &::before{
             content: '';
             position: absolute;
@@ -84,6 +99,56 @@
             background-image: url(../images/arrow_down.svg);
             background-repeat: no-repeat;
             background-position: center;
+        }
+    }
+}
+.group__price-setings{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+@media screen and(max-width: 1439px) {
+    .product__items{
+        justify-content: flex-start;
+    }
+    .product__box{
+        margin-top: 20px;
+    }
+    .price__btn{
+        margin-top: 10px;
+    }
+    .group__price-setings{
+        flex-direction: column-reverse;
+        width: auto;
+        margin-left: 20px;
+    }
+    .settings-options{
+        min-width: auto;
+    }
+}
+@media screen and(max-width: 640px) {
+    h2{
+        font-size: 2em;
+    }
+    .product__title{
+        text-align: left;
+        max-width: 100%;
+    }
+    .product__items{
+        flex-direction: column;
+        align-items: center;
+    }
+    .group__price-setings{
+        margin-left: 0;
+    }
+    .price{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &__btn{
+            width: 100%;
         }
     }
 }
