@@ -208,16 +208,6 @@ section{
     border: none;
     padding: 8px 0;
     cursor: pointer;
-    &:hover{
-        background-color: $ns;
-        color: $mw;
-        transition: .3s all;
-    }
-    &:active{
-        background-color: $bw;
-        color: $ns;
-        text-transform: none;
-    }
 }
 .btn-center{
     margin: 0 auto;

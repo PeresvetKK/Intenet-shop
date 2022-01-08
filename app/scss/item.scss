@@ -53,10 +53,19 @@
     padding: 16px;
     &__item{
         margin-top: 8px;
+        margin-right: 5px;
     }
 }
 .setings__options{
     margin-top: 20px;
+}
+.settings__slider{
+    display: flex;
+}
+.active{
+    background-color: $bw;
+    color: $ns;
+    text-transform: none;
 }
 .settings-options{
     min-width: 380px;
