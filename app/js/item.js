@@ -1,5 +1,5 @@
 "use stirct"
-//--------------------------------------------------- работа бургера, меню
+//-------------------------------------------------------работа бургера, меню---------------------------------------------------
 let burger = document.querySelector('.burger');
 let activeMenu = document.querySelector(".bottom-menu");
 
@@ -7,7 +7,7 @@ burger.onclick = () =>{
 	activeMenu.classList.toggle('bottom-menu-active');
 	burger.classList.toggle('burger-active');
 }
-//------------------------------------------------------изменения header
+//-----------------------------------------------------------изменения header---------------------------------------------------
 $(function() {
 	let header = $('.header');
 	let hederHeight = header.height(); // вычисляем высоту шапки
@@ -26,7 +26,7 @@ $(function() {
 	  	}
 	});
 });
-//----------------------------------------------------Настройка слайдера товара
+//-------------------------------------------------------Настройка слайдера товара-----------------------------------------------
 $('.product-img').slick({
 	slidesToShow: 1,
 	slidesToScroll: 1,
@@ -44,20 +44,50 @@ $('.preview__slider').slick({
 	nextArrow: '<img class="slider-arrows slider-arrows__right" src="images/arrow-right.svg" alt=""></img>',
 });
 
-//-----------------------------------------------Выбор цвета товара
-let container = document.querySelector('.inner__btn');
+//---------------------------------------------------------Выбор цвета товара-----------------------------------------------------
+let container = document.querySelector('.inner__btn'); // контейнер кнопок характеристик
+let itemBtn = document.getElementsByClassName('settings-slider__item'); // кнопки характеристики
+
+let stanrt = document.querySelector('#standart'); // Кнопка стандарт
+let ral = document.querySelector('#ral'); // кнопка RAL
+let bronze = document.querySelector('#bronze'); // кнопка bronze
+
+let priceBtn = document.querySelector('.price__btn');
 
 container.addEventListener('click', function(event){
-	let itemBtn = document.getElementsByClassName('settings-slider__item');
 	for (let i = 0; i < itemBtn.length; i++){
 		itemBtn[i].classList.remove('active');
 	}
 	if(event.target.classList.contains('settings-slider__item') == true){
 		event.target.classList.add('active');
 	}
+
+	if(stanrt.classList.contains('active')){
+		document.querySelector('.price__title').textContent = '24 750₽';
+	}
+	if(ral.classList.contains('active')){
+		document.querySelector('.price__title').textContent = '26 499₽';
+	}
+	if(bronze.classList.contains('active')){
+		document.querySelector('.price__title').textContent = '29 990₽';
+	}
 });
 
-//--------------------------------------------------Расскрывающиеся характеристики
+priceBtn.onclick = () =>{
+	console.log('www');
+	if(priceBtn.textContent == 'добавить в корзину'){
+		priceBtn.textContent = 'Перейти к оформлению';
+		
+	}else{
+		priceBtn.textContent = 'добавить в корзину';
+	}
+};
+
+//-------------------------------------------изменение цены в зависимости от выбора цвета-----------------------------------------
+let price = document.querySelector('.price__title');
+let standart = document.querySelector('#standart');
+
+//--------------------------------------------------Расскрывающиеся характеристики------------------------------------------------
 let btnOpenSettings = document.querySelector('.settings-options__open-item');
 let secretBlock = document.querySelector('.hiden-settings');
 
