@@ -74,10 +74,9 @@ container.addEventListener('click', function(event){
 });
 
 priceBtn.onclick = () =>{
-	console.log('www');
 	if(priceBtn.textContent == 'добавить в корзину'){
 		priceBtn.textContent = 'Перейти к оформлению';
-		
+
 	}else{
 		priceBtn.textContent = 'добавить в корзину';
 	}
