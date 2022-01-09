@@ -245,8 +245,13 @@ section{
         height: 160px;
         
     }
+    &__prcon{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 16px 0;
+    }
     &__price{
-        margin: 16px 0 24px 0;
         font-size: 24px;
         line-height: 133%;
     }
@@ -256,6 +261,29 @@ section{
         font-size: 16px;
         line-height: 150%;
         text-transform: none;
+    }
+}
+.counter{
+    display: flex;  
+    align-items: center;
+    height: 26px;
+    &__control{
+        font-size: 20px;
+        font-family: 'oswald-bold';
+        line-height: 150%;
+        cursor: pointer;
+    }
+    .minus{
+        
+    }
+    &__current{
+        font-size: 16px;
+        font-family: 'oswald-regular';
+        padding: 0px 20px;
+        margin: 0 8px;
+        line-height: normal;
+        border: 1px solid $ns;
+        cursor: pointer;
     }
 }
 .text-box{

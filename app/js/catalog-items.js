@@ -1,4 +1,7 @@
 "use stirct"
+
+
+
 //--------------------------------------------------- работа бургера, меню
 let burger = document.querySelector('.burger');
 let activeMenu = document.querySelector(".bottom-menu");
@@ -68,4 +71,22 @@ filtrBtn.onclick = () =>{
 	}
 }
 
+//-----------------------------------------------------------счетчик товаров-------------------------------------------------
+window.addEventListener('click', (event)=>{
+    if(event.target.dataset.action == "plus" || event.target.dataset.action == "minus" ){
+        
+        let counterWrapper = event.target.closest('.counter');
+        let counter = counterWrapper.querySelector('[data-counter]');
+
+        if(event.target.dataset.action == "plus"){
+            counter.textContent = ++counter.textContent;
+        }
+
+        if(event.target.dataset.action == "minus"){
+            if (counter.textContent > 1){
+                counter.textContent = --counter.textContent;
+            }
+        }
+    }
+});
 
