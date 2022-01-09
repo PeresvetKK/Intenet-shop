@@ -48,6 +48,7 @@ gulp.task('js', function(){
     'node_modules/slick-carousel/slick/slick.js',
     'node_modules/nouislider/dist/nouislider.js',
     'node_modules/wnumb/wNumb.js',
+    'node_modules/blowup/lib/blowup.js',
   ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
