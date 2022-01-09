@@ -1,2 +1,3 @@
-
+app/*.html
+app/images/**.*
 node_modules
